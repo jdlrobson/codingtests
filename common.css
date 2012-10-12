@@ -1,0 +1,46 @@
+/*
+Please assume this is provided by the server and cannot be overriden or altered
+*/
+
+html {
+	font-size: 80%;
+}
+
+body {
+	font-size: 1em;
+	color: black;
+	background: white;
+	font-family: sans-serif;
+	word-break: break-word;
+	margin: 22px 22px;
+}
+
+#content_wrapper {
+	width: 800px;
+	margin: auto;
+}
+
+table {
+	border: solid 1px black;
+	margin: 8px 0px;
+}
+
+th {
+	border-bottom: solid 1px black;
+}
+
+td {
+	text-align: center;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 10px 0px 10px 20px;
+}
+
+h2 {
+	border-bottom: solid 2px #aaa;
+}

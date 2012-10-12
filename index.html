@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<!-- revision #4 -->
+	<link href='common.css' rel="stylesheet" type="text/css">
+	<link href='style.css' rel="stylesheet" type="text/css">
+	<title>Wikimedia Foundation Coding Exercise</title>
+<body id="content_wrapper">
+<div id="content"> <!-- assume this is the output of a page converted from wikitext to html and cannot be changed -->
+	<h1>Wikimedia Foundation Coding Exercise</h1>
+	<img src="Wikimediafoundation-logo.png" alt="Wikimedia Foundation logo" title="Logo for the Wikimedia Foundation">
+	You should treat this document as if it was a living Wikipedia article created by a community and therefore subject to change at any time. Our web pages must be resilient to all sorts of things the general public can throws at us from invalid html markup, to inline styles, to factually incorrect information and sentences such as CONGRATULATIONS YOU HAVE WON $3 MILLION IN THE LOTTERY SEND ME MONEY TO CLAIM!
+	<h2>Contents</h2>
+	<ul id="toc">
+		<li><a href="#who">Who we are</a></li>
+		<li><a href="#location">Where we are</a></li>
+		<li><a href="#task">Task</a></li>
+		<li><a href="#sol">Your Solution</a></li>
+		<li><a href="#assess">Assessment</a></li>
+	</ul>
+	<h2 id='who' class="toggle">Who we are</h2>
+	<div class="section">
+	<p>At the Wikimedia Foundation, <a class="external" href="http://wikimediafoundation.org/wiki/Who_we_are">we are</a> creative and motivated people who work in an open and collaborative environment. We are mission-driven and committed to making knowledge free <sup class='missing'>[citation needed]</sup>. Are you?
+	Much of the staff of the Foundation is from the Wikimedia community  <sup class='missing'>[citation needed]</sup>. We consider experience with the Wikimedia projects and with volunteer communities to be extremely valuable.</p>
+	<img src="Wikimedia_Foundation_SOPA_War_Room_Meeting_1-17-2012-1-9.jpg" alt="SOPA War room meeting"
+		title="Just another day in the Wikimedia Foundation office" style="width:800px;">
+	</div>
+	<h2 id="location" class="toggle">Where we are</h2>
+	<div class="section">
+	The Wikimedia Foundation is based in <span class="city">San Francisco</span> on <span class='street'>Mission Street</span>  <sup class='missing'>[citation needed]</sup>.
+	</div>
+	<h2 id="task" class="toggle">Task</h2>
+	<div class="section">
+	The task should take no more than 3 hours. During the task you have several challenges:
+	<h3>Challenge 1</h3>
+	Optimise this page for mobile browsing as well as desktop browsing without any horizontal scrolling. If you feel the urge improve the design of the page.
+	<h3>Challenge 2</h3>
+	Enhance the page with one or more of the following features.
+	<dl>
+		<dt>Table of Contents</dt>
+		<dd>
+			Certain articles are extremely long and contain several sub sections.
+			On certain mobile devices it can be quite hard to return to other sections in an article.
+			The challenge is to construct a mechanism with which a user can jump to any section in the page from wherever they are in the page.
+		</dd>
+		<dt>Cover flow</dt>
+		<dd>
+		When the user rotates the screen, convert the layout into a slide show where each slide is a section. The best solutions will resemble a <a class="external" href="http://en.wikipedia.org/wiki/Cover_Flow">cover flow</a>
+		</dd>
+		<dd>
+			<img src="coverflow.png" alt="The Cover Flow interface" title="The Cover Flow interface">
+		<dt>Full screen image preview</dt>
+		<dd>
+			Make it so that when a user clicks on an image in the page the image expands to take up the full screen. Use the title of the images as a caption. Allow the user to flick between all other images on the page. Images should appear in the order they appear in the document.
+		</dd>
+		<dt>Personal annotations</dt>
+		<dd>
+			Allow a user to add their own personal annotations within this document. Make sure that when the page is refreshed these annotations are still accessible.
+		</dd>
+		<dt>Add Location to page<dt>
+		<dd>
+			This article has no location. Where a device has geo location provide a mechanism for adding the users location to the article. Note there is no need for this location to persist across a page refresh. When doing this task it is extremely important that you give a nice user experience.
+		</dd>
+		<dt>Find on this page</dt>
+		<dd>
+		Develop a search function that takes a phrase and highlights text on the page which matches the phrase. (Essentially mimic the find function on your browser). Take care to think about the user experience!
+		</dd>
+		<dt>Citation needed</dt>
+		<dd>
+			Where a citation is needed allow a user to provide one. Make us extra happy if the new citation is saved and shown on a refresh.
+		</dd>
+		<dt>Report inaccuracy / spam</dt>
+		<dd>
+		Provide a method for a user to provide feedback on a spelling mistakes and inaccuracies in the current document. There are a couple of speling mistakes in this sentence for the purposse of this task. It is also common for Wikipedia articles to have factually incorrect information. Statements like Malaysia is in Africa, Canada is in North America <sup class='missing'>[citation needed]</sup> and/or Sydney is the capital of Australia may be incorrect and in need of citations where there is dispute. You may add some some spam in the markup of this document provided it is just a text node to demonstrate your solution.
+		</dd>
+	</dl>
+	</div>
+	<h2 id="sol" class="toggle">Your Solution</h2>
+	<div class="section">
+	<ul>
+		<li>You should make use of the entire 3 hour period. We will assume whatever you come up with took 3 hours. Don't worry if you go a little over or a little under that timeframe.</li>
+		<li>Your solution must be purely css and javascript based and must reside in script.js and script.css. The contents of these files should be all your own work.</li>
+		<li>You must assume that everything inside the #content element is generated by the server and cannot be changed however feel free to add markup outside this element where needed.</li>
+		<li>You must not introduce any additional javascript libraries including jquery plugins.</li>
+		<li>Use jQuery or native javascript - your choice</li>
+		<li>Your solution should work in Google Chrome and be agnostic to the device size. It will also be tested in an iphone and android device.</li>
+		<li>Your solution must run off a file:/// uri</li>
+	</ul>
+	</div>
+	<h2 id="assess" class="toggle">Assessment</h2>
+	<div class="section">
+	Your task will be assessed based on but not limited to or exclusively to:
+	<ul>
+		<li>User experience - our users expect the best from us. How does your solution make them feel? Sad or happy.</li>
+		<li>Appearance - if css is your thing show us how beautiful this page could be. Dare to be bold</li>
+		<li>Coding style - you should assume your code must be near production quality as if you were sending it for a code review to an open source project. Take a look at the existing code and try to mimic it as much as possible.</li>
+		<li>Completeness of solution - try and complete your solution rather than trying lots of the challenges. The more polished the better.</li>
+		<li>Creativity of solution - make our jaws drop!</li>
+		<li>Performance - this page might be loaded on a slow mobile connection. Think about page load as well as the capabilities of different devices that might access it.</li>
+		<li>Simplicity of solution - sometimes simple is key but if it's too simple</li>
+		<li>Use of CSS3 and HTML5 - show off what you can do in the latest browsers</li>
+		<li>Adaptability to different device screen widths and resolutions</li>
+	</ul>
+	</div>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="common.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</div>
+</body>
+</html>
